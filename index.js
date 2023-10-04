@@ -6,7 +6,7 @@ const app = express();
 const port = 3001;
 const API_URL = "https://v2.jokeapi.dev/joke/";
 
-const config = {Params:{format:"json", lang:"cs"}, };
+const config = {Params:{format:"json", lang:"en"}, };
 //available categories: Any, Misc, Programming, Dark, Pun, Spooky, Christmas
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
